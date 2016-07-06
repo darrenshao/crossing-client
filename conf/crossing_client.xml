@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClientConfig enabled="true">
+	<crossingserver>
+		<server name="DEFAULT" ip="127.0.0.1" port="9000" sslEnabled="false"></server>
+	</crossingserver>
+	
+	<!-- Call Info Configurations -->
+	<callobjects>
+		<object service="DEFAULT" 
+				signType="MD5" 
+				signKey="miftyExampleKey" 
+				encryptType="DES" 
+				encryptKey="miftyExampleKey"
+				decryptKey="miftyExampleKey">
+		</object>	
+		<object service="com.twohalf.mifty.service.gen.ServiceClassName" 
+				signType="MD5" 
+				signKey="miftyExampleKey" 
+				encryptType="DES" 
+				encryptKey="miftyExampleKey"
+				decryptKey="miftyExampleKey">
+		</object>
+		<object service="com.twohalf.mifty.service.gen.UserService" 
+				signType="MD5" 
+				signKey="miftyExampleKey" 
+				encryptType="DES" 
+				encryptKey="miftyExampleKey"
+				decryptKey="miftyExampleKey">
+		</object>
+	</callobjects>
+	
+</ClientConfig>
